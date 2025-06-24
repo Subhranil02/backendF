@@ -15,11 +15,9 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser()) 
 
-//routes import 
 
 
 //routes declaration
-console.log("✅ User routes mounted at /api/v1/users");
 app.use("/api/v1/users", userRouter)
 
 
